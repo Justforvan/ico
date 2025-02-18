@@ -1,4 +1,4 @@
-# GitHub Project License
+# The ICO Allocation Calculator Project License
 
 ## License
 
