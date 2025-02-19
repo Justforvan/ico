@@ -15,20 +15,20 @@ export default function BottomNav() {
 
   return (
     <div className="w-full grid grid-cols-3 text-black border border-gray-300 p-3 text-center fixed bottom-0">
-      {navItems.map(({ href, label, icon: Icon }) => (
+      {navItems.map(({ href, icon: Icon }) => (
         <Link key={href} href={href} className="flex flex-col items-center">
           <Icon
             className={`text-center ${
               pathname === href ? "text-yellow-600" : ""
             }`}
           />
-          <span
+          {/* <span
             className={`text-center text-sm ${
               pathname === href ? "text-yellow-600" : ""
             }`}
           >
             {label}
-          </span>
+          </span> */}
         </Link>
       ))}
     </div>

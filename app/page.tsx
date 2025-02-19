@@ -6,5 +6,11 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  return <>Enter</>;
+  return (
+    <>
+      <main className="flex flex-col justify-center">
+        <h1 className="font-bold text-2xl m-6">Home | ICOC</h1>
+      </main>
+    </>
+  );
 }
