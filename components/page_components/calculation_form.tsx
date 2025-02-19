@@ -16,16 +16,22 @@ import {
 import { Input } from "@/components/ui/input";
 
 const formSchema = z.object({
+  id: z.string().uuid(),
   ICO_name: z.string().min(2).max(50),
   user_committed: z.number().int().positive(),
   ICO_target: z.number().int().positive(),
   ICO_currently_raised: z.number().int().positive(),
 });
 
-export default function CalculationForm() {
+type CalculationProps = {
+  id: string;
+};
+
+export default function CalculationForm({ id }: CalculationProps) {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
+      id: id,
       ICO_name: "",
       user_committed: 0,
       ICO_target: 0,
