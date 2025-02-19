@@ -1,10 +1,10 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Home | ICOC",
-  description: "ICO Allocation Calculator by JFV",
+  title: "Account | ICOC",
+  description: "ICO Allocation account page",
 };
 
 export default function Home() {
-  return <>Enter</>;
+  return <div>Account</div>;
 }
