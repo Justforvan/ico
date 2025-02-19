@@ -25,9 +25,9 @@ export default function RootLayout({
       >
         {children}
       </body>
-      <footer className="z-50 mt-10">
+      <nav className="z-50 mt-10">
         <BottomNav />
-      </footer>
+      </nav>
     </html>
   );
 }

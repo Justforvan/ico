@@ -3,7 +3,7 @@ import { Wallet } from "lucide-react";
 
 export default function HistoryNeedLogin() {
   return (
-    <div className="m-6 p-3 border border-gray-400 rounded-xl">
+    <div className="m-6 p-3">
       <div className="flex flex-col items-center justify-center my-10">
         <p className="text-center">
           Connect your Solana wallet to access your history.
