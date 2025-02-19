@@ -76,8 +76,8 @@ export default function CalculationForm() {
                   />
                 </FormControl>
                 <FormDescription>
-                  Value in USD you are willing to commit to the ICO. Only
-                  number.
+                  Value in USD you are willing to commit to the ICO. Number
+                  only.
                 </FormDescription>
                 <FormMessage />
               </FormItem>
@@ -100,7 +100,7 @@ export default function CalculationForm() {
                   />
                 </FormControl>
                 <FormDescription>
-                  The target to be raised on the ICO. Value in USD, only number.
+                  The target to be raised on the ICO. Value in USD, number only.
                 </FormDescription>
                 <FormMessage />
               </FormItem>
@@ -124,7 +124,7 @@ export default function CalculationForm() {
                   />
                 </FormControl>
                 <FormDescription>
-                  The amount currently has been raised by the ICO.
+                  The amount currently has been raised by the ICO. Number only.
                 </FormDescription>
                 <FormMessage />
               </FormItem>
