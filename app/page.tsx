@@ -1,4 +1,4 @@
-import ComingSoon from "@/components/page_components/coming_soon";
+import CalculationForm from "@/components/page_components/calculation_form";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -11,7 +11,9 @@ export default function Home() {
     <>
       <main className="flex flex-col justify-center">
         <h1 className="font-bold text-2xl m-6">Home | ICOC</h1>
-        <ComingSoon />
+        <section className="m-6 p-3 max-w-screen-xl flex flex-col items-center justify-center">
+          <CalculationForm />
+        </section>
       </main>
     </>
   );

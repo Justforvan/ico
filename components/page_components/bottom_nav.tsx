@@ -14,7 +14,7 @@ export default function BottomNav() {
   ];
 
   return (
-    <div className="w-full grid grid-cols-3 text-black border border-gray-300 p-3 text-center fixed bottom-0">
+    <div className="w-full grid grid-cols-3 text-black border bg-white border-gray-300 p-3 text-center fixed bottom-0">
       {navItems.map(({ href, icon: Icon }) => (
         <Link key={href} href={href} className="flex flex-col items-center">
           <Icon
