@@ -131,7 +131,11 @@ export default function CalculationForm() {
             )}
           />
 
-          <Button type="submit" className="bg-yellow-800 hover:bg-yellow-900">Submit</Button>
+          <div className="flex justify-center">
+            <Button type="submit" className="bg-yellow-800 hover:bg-yellow-900">
+              Submit
+            </Button>
+          </div>
         </form>
       </Form>
     </>
