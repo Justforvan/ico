@@ -2,7 +2,7 @@ import HistoryNeedLogin from "@/components/page_components/history_need_login";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "History | ICOC",
+  title: "History | ICO Calculator",
   description: "ICO Allocation history page",
 };
 

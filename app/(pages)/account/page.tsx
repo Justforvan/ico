@@ -3,7 +3,7 @@ import ConnectWallet from "@/components/page_components/connect_wallet";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Account | ICOC",
+  title: "Account | ICO Calculator",
   description: "ICO Allocation account page",
 };
 

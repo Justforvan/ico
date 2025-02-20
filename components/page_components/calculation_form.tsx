@@ -14,22 +14,16 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-
-const formSchema = z.object({
-  id: z.string().uuid(),
-  ICO_name: z.string().min(2).max(50),
-  user_committed: z.number().int().positive(),
-  ICO_target: z.number().int().positive(),
-  ICO_currently_raised: z.number().int().positive(),
-});
+import { CalculationSchema } from "@/types";
+import { AllocationCheck } from "@/app/actions/countResult.actions";
 
 type CalculationProps = {
   id: string;
 };
 
 export default function CalculationForm({ id }: CalculationProps) {
-  const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
+  const form = useForm<z.infer<typeof CalculationSchema>>({
+    resolver: zodResolver(CalculationSchema),
     defaultValues: {
       id: id,
       ICO_name: "",
@@ -40,7 +34,8 @@ export default function CalculationForm({ id }: CalculationProps) {
   });
 
   // 2. Define a submit handler.
-  function onSubmit(values: z.infer<typeof formSchema>) {
+  async function onSubmit(values: z.infer<typeof CalculationSchema>) {
+    await AllocationCheck(values);
     console.log(values);
   }
 
